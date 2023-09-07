@@ -34,6 +34,11 @@ input{
   border-radius: 20px;
   border: none;
 }
+input:focus-visible {
+  outline-offset: 0px;
+  outline: -webkit-focus-ring-color auto 0px;
+  outline-color: greenyellow;
+}
 button{
   border: none;
   padding: 7px 10px;
@@ -42,6 +47,31 @@ button{
   background-color: tan;
   font-weight: bolder;
 }
+button:hover{
+  background-color: #c98f53;
+  box-shadow: #c98f53 0px 0px 6px 2px;
+  margin-top: 3px;
+}
+
+#Update-form input{
+  border: red solid 2px;
+}
+#Update-form input:focus-visible {
+  outline-offset: 0px;
+  outline: -webkit-focus-ring-color auto 1px;
+  outline-color: red;
+}
+#Update-form button{
+  background-color: mediumseagreen;
+}
+#Update-form button:hover{
+  background-color: #259356;
+  box-shadow: #259356 0px 0px 6px 2px;
+  margin-top: -1px;
+  color: antiquewhite;
+
+}
+
 .allTodos{
   list-style: none;
   margin: 0;
@@ -57,6 +87,7 @@ button{
   display: flex;
   width: 450px;
   align-items: center;
+  min-height: 34px;
 }
 .todoText{
   flex: 1;
